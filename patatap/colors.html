@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Circles</title>
+    <script src="lib/paper-full.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/paperscript" canvas="myCanvas">
+        var path;        
+        var targetColor;
+        var copy;
+        var count = 0;
+        var color_n = 0;
+        var animating = true;
+        var bounding = [];
+        var growing = false;
+
+        var timer = 0;
+
+
+        init();
+
+        multiplyCircle(10);
+
+        function init()
+        {
+            path = new Path.Circle({
+                center: (200,200),
+                radius: 10,
+                fillColor: 'red'
+            });
+            path.fillColor = Color.random();
+            color_n = path.fillColor.hue;
+            targetColor = path.fillColor.hue + 1;
+       
+        }
+        
+        function cloneCircle(x, y)
+        {
+            copy = path.clone();
+            copy.position = new Point(x,y);
+            color_n += 0.3;
+            copy.fillColor.hue = color_n;
+            bounding.push(copy.bounds);
+        }
+        
+        function multiplyCircle(n)
+        {
+            for(var i = 0; i < n; i++)
+            {
+                for(j = 0; j < n+10; j++)
+                {
+                    cloneCircle(j*100, i*100);
+                   
+                    count++;
+                }
+            }
+            path.remove();
+        }
+
+
+        function animateCircles()
+        {
+            var item;
+            console.log(timer);
+            timer++;
+            console.log(timer);
+
+            if(timer % 300  === 0)
+            {
+                growing = toggleGrowing();
+            }
+
+            for(var i = 0; i < count; i++)
+            {
+                if(growing)
+                {
+                    item = project.activeLayer.children[i];
+                
+                    item.fillColor.hue += 0.5;
+                    item.scaling -= 0.01;
+                }
+                else
+                {
+                    item = project.activeLayer.children[i];
+              
+         
+                    item.scaling += 0.01;
+                }
+
+            }
+            
+        }
+
+        function toggleGrowing()
+        {
+            return !growing;
+        }
+
+
+        function onFrame(event) {
+ 
+         
+         if(animating)
+         {
+            animateCircles();
+
+         } 
+        }
+
+        function resetSize()
+        {
+            var item = project.activeLayer.children[0];
+            for(var i = 0; i < count; i++)
+            {
+                item = project.activeLayer.children[i];
+              
+                item.bounds = bounding[i];
+        
+              
+            }
+        }
+
+        function resetColor()
+        {
+            var item = project.activeLayer.children[0];
+            for(var i = 0; i < count; i++)
+            {
+                item = project.activeLayer.children[i];
+                item.fillColor = Color.random();
+                
+              
+            }
+        }
+
+        function toggleAnimation()
+        {
+  
+            return !animating;
+        }
+
+        function onKeyDown(event) {
+            resetSize();
+            resetColor();
+            growing = toggleGrowing();
+        }
+
+        function onMouseDown(event) {
+            console.log('You pressed the mouse!');
+            animating = toggleAnimation();
+        }
+
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+</body>
+</html>

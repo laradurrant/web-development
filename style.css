@@ -1,76 +1,27 @@
 body {
-   background-color: #232323;
-   margin: 0;
-   font-family: "Montserrat", "Avenir", "Arial";
-}
-
-.square {
-    width: 30%;
-    background-color: purple;
-    padding-bottom: 30%;
-    float: left;
-    margin: 1.66%;
-    border-radius: 15%;
-    transition: background-color 0.6s;
-    -webkit-transition: background 0.6s;
-    -moz-transition: background 0.6s;
-}
-
-#message {
-    display: inline-block;
-    width: 20%;
-    font-style: inherit;
-}
-
-#container {
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-h1 {
-    color: white;
-    font-weight: normal;
-    background-color: steelblue;
-    text-transform: uppercase;
     text-align: center;
-    margin: 0;
-    line-height: 1.1;
-    padding: 20px 0;
-}
-
-#stripe {
-    background-color: white;
-    color: black;
-    height: 30px;
-    text-align: center;
-}
-
-.selected {
-    background-color: steelblue;
-    color: white;
-    
-}
-
-#colorDisplay {
-    font-size: 200%;
-  
-}
-
-button {
-    border: none;
-    background: none;
+    font-style: normal;
+    font-family: Arial;
+    color: #084003;
     text-transform: uppercase;
-    height: 100%;
-    font-weight: 700;
-    color: steelblue;
-    letter-spacing: 1px;
-    font-size: inherit;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
+    background: rgb(58,233,162);
+    background: linear-gradient(90deg, rgba(58,233,162,1) 0%, rgba(242,255,174,1) 100%); 
 }
 
-button:hover {
-    color: white;
-    background: steelblue;
+a {
+    color: #084003;
+}
+
+
+li {
+    list-style: none;
+    padding: 30px;
+    margin: 50px;
+    border: 5px solid #084003;
+    background: rgb(218, 255, 253);
+    text-transform: capitalize;
+}
+
+h2 {
+    margin-bottom: 40px;
 }
