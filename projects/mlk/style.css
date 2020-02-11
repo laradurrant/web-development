@@ -1,0 +1,89 @@
+body {
+    font-family: 'Merriweather', serif;
+  }
+  
+  
+  h3 {
+    font-family: 'Inconsolata', monospace;
+    position: relative;
+    bottom: 15px;
+    text-decoration: none;
+  }
+  
+  main {
+    background-color: #EEE;
+    text-align: center;
+    padding: 10px;
+    margin: 3em 0em 3em 0em;
+    
+  }
+  
+  timeline {
+    margin: auto;
+  }
+  
+  .flex-container {
+     display: grid;
+     grid-template-columns: 20% auto 20%;
+  }
+  
+  #img-div{
+    background-color: #FFF;
+    padding: 1em;
+    
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  section {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 1em;
+    font-family: 'Inconsolata', monospace;
+  }
+  
+  #final{
+    padding: 2em;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  
+  
+  li {
+    
+    padding-bottom: 3em;
+    text-align: left;
+  }
+  
+  ol {
+    list-style: none;
+  }
+  
+  #footer-text {
+      padding-bottom: 0em;
+    text-align: center;
+  }
+  
+  
+  
+  footer {
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+   
+  .flex-container {
+     display: grid;
+     grid-template-columns: 0% auto 0%;
+  }
+    
+  }
