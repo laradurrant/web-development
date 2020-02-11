@@ -1,0 +1,171 @@
+:root {
+    /* double check these colors */
+    --outer-space: #2D2823;
+    --aero-blue: #CEFDFF;
+    --columbia-blue: #CEFDFF;
+    --pastel-gray: #C9C9C9;
+    --floral-white: rgb(255, 253, 250);
+    --main-white: #FFF;
+    --dark-gray: #222;
+  }
+  
+    .navbar-brand{
+      font-family: 'Roboto Slab', serif;
+      font-weight: 600;
+      letter-spacing: 4px;
+      padding: 5px;
+      border-radius: 2%;
+     }
+    
+   .icons a {
+    color: var(--aero-blue);
+  }
+  
+  .icons a:hover {
+    color: var(--aero-blue);
+  }
+  
+  
+  
+  h2 {
+  margin-top: 2em;  
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+   
+  }
+  
+  .icons a:hover {
+    color: var(--main-white);
+  }
+  
+  
+  
+  .description {
+    color: var(--main-white);
+  }
+  
+  .navbar {
+    box-shadow: 2px 2px 5px var(--outer-space);
+  }
+  
+  .navbar-light .navbar-brand {
+    color: var(--outer-space) !important;
+    opacity: 0.9;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: var(--outer-space) !important;
+  
+    opacity: 0.8;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    background-color: var(--main-white) !important;
+    border-radius: 20%;
+    opacity: 0.9;
+  }
+  
+  html {
+    
+      scroll-behavior: smooth;
+  }
+  
+  body {
+    font-weight: 500;
+    color: var(--outer-space);
+    text-align: center;
+  }
+  
+  
+  b, strong {
+    color: var(--outer-space);
+  }
+  
+  h1 {
+     color: var(--aero-blue) !important;
+    font-family: 'Roboto Slab', serif;
+  
+  }
+  
+  .lead {
+    color: var(--main-white) !important;
+    font-weight: 600;
+  
+    
+  }
+  
+  .bg-light {
+    background-color: var(--aero-blue) !important;
+    
+  }
+  
+  
+  .projects-list {
+    background-color: var(--floral-white) !important;
+  }
+  
+  
+  .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  
+  
+  
+  .jumbotron {
+    padding-top: 40vh;
+    height: 100vh;
+    margin-bottom: 0;
+    background-color: var(--outer-space);
+    color: var(--main-white);
+  }
+  
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron h1 {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+  
+  
+  
+  footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    background-color: var(--aero-blue);
+  }
+  
+  
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--outer-space);
+    color: var(--aero-blue);
+    padding: 20px;
+    height: 100vh; 
+  }
+  
+  .contact-me {
+    font-family: 'Roboto Slab', serif;
+  }
