@@ -137,17 +137,20 @@ function addPair(current){
 function checkPairs(){
     if(list.length ==  2){
 
+      var first = document.getElementById(list[0].id);
+      var second = document.getElementById(list[1].id);
+
        // If we have a matching pair
        if(list[0].value === list[1].value){ 
        
          matches++;
-         document.getElementById(list[0].id).removeEventListener("click", addListener);
-         document.getElementById(list[1].id).removeEventListener("click", addListener);
+         first.removeEventListener("click", addListener);
+         second.removeEventListener("click", addListener);
          
-         document.getElementById(list[0].id).classList.remove("active");
-         document.getElementById(list[1].id).classList.remove("active");
-         document.getElementById(list[0].id).classList.add("selected");
-         document.getElementById(list[1].id).classList.add("selected");
+         first.classList.remove("active");
+         second.classList.remove("active");
+         first.classList.add("selected");
+         second.classList.add("selected");
          
          // If we have completed all of the pairs
          // displays win screen
@@ -162,11 +165,11 @@ function checkPairs(){
     else {
         // Not a match, continue with the game & reset the styling
 
-        document.getElementById(list[0].id).addEventListener("click", addListener);
-        document.getElementById(list[1].id).addEventListener("click", addListener);
+        first.addEventListener("click", addListener);
+        second.addEventListener("click", addListener);
       
-        document.getElementById(list[0].id).classList.remove("active");
-        document.getElementById(list[1].id).classList.remove("active");
+        first.classList.remove("active");
+        second.classList.remove("active");
        
     }
  
