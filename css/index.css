@@ -81,7 +81,7 @@ footer {
 .web-dev {
   background-color: var(--off-white);
   color: var(--outer-space);
-  height: 200vh; 
+  height: 250vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
