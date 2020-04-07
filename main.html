@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,140 +15,155 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Hi, I'm Lara, a freelance web developer. Check out my list of projects to see what I do.">
+  
+
     <title>Lara Durrant - Web Developer</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;display=swap">
-    <link rel="stylesheet" href="index.css">
-
-
-  </head>
-  <body>
-    <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <span class="navbar-brand"> Lara Durrant</span>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#welcome">Welcome <i class="fa fa-comment"></i><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects <i class="fa fa-laptop"></i></a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact <i class="fa fa-coffee"></i></a>
-      </li>
-    </ul>
     
-  </div>
-</nav>
-</header>
+    <!-- Note: We may want to combine all of the CSS into a single minified file for
+      optimization and less browser calls. See here for more resources:
+          https://stackoverflow.com/questions/2336302/single-huge-css-file-vs-multiple-smaller-specific-css-files
+    -->
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <script src="https://kit.fontawesome.com/47bda26fac.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light nav-light fixed-top">
+    <span class="navbar-brand"> <a href="./">Lara Durrant</a></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+       
+ 
+        <li class="nav-item">
+          <a class="nav-link" href="#webdev">Web Development <i class="fa fa-laptop"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#coaching">Coaching <i class="fa fa-heart"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#writing">Writing <i class="fa fa-pencil"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact <i class="fa fa-coffee"></i></a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </nav>
+  </header>
+   
 
 <main role="main">
 
-  <section class="jumbotron text-center" id="welcome">
+  <section class="welcome text-center" id="welcome">
     <div class="container">
       <br><br>
       <h1>Hi, I'm Lara <i class="fa fa-comment"></i></h1>
-      <p class="lead">Freelance Web Developer</p>
+      <p class="lead white-text">I'm a freelance <a class="blue-text underline" href="#webdev">web developer</a>, <a class="blue-text underline" href="#coaching">coach</a>, and <a class="blue-text underline" href="#writing">writer</a>. </p>
 
     </div>
   </section>
-    <span id="projects"></span>
-    <div class="album py-5 bg-light projects-list" >
-      <div class="container" >
-        <h2><i class="fa fa-laptop fa-2x"></i> <br>Here are some of my recent projects: </h2><br>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <a href="https://www.joanfauedurrant.com"><img  class="img-fluid" src="images/fine_art_photos.jpg"></a>
-              <div class="card-body">
-                <p class="card-text">Check out this responsive photo album site created to display my mother's photography.</p>
-              <span class="badge badge-secondary">HTML</span> <span class="badge badge-secondary">CSS</span> <span class="badge badge-secondary">JavaScript</span> 
-                <span class="badge badge-secondary">Node</span>  <span class="badge badge-secondary">MongoDB</span> <span class="badge badge-secondary">Express</span> 
+    <span id="webdev"></span>
+    <div>
+      <div class="container web-dev" >
+        <span id="projects"></span>
+        <div class="album py-5 projects-list" >
+          <div class="container" >
+            <h2><i class="fa fa-laptop fa-2x"></i> <br> Web Development </h2><br>
+            <h3>Here are some of my recent projects:</h3>
+            <div class="row">
+    
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <a href="https://www.joanfauedurrant.com"><img  class="img-fluid" src="images/fine_art_photos.jpg"></a>
+                  <div class="card-body">
+                    <p class="card-text">Check out this responsive photo album site created to display my mother's photography.</p>
+                  <span class="badge badge-secondary">HTML</span> <span class="badge badge-secondary">CSS</span> <span class="badge badge-secondary">JavaScript</span> 
+                    <span class="badge badge-secondary">Node</span>  <span class="badge badge-secondary">Express</span> 
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <a href="projects/memory/index.html"><img  class="img-fluid" src="images/memory game.jpg"></a>
-              <div class="card-body">
-                <p class="card-text">Test your memory with this in-browser matching game.</p>
-              <span class="badge badge-secondary">HTML</span> <span class="badge badge-secondary">CSS</span> <span class="badge badge-secondary">JavaScript</span> 
               
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <a href="projects/memory/"><img  class="img-fluid" src="images/memory game.jpg"></a>
+                  <div class="card-body">
+                    <p class="card-text">Test your memory with this in-browser matching game.</p>
+                  <span class="badge badge-secondary">HTML</span> <span class="badge badge-secondary">CSS</span> <span class="badge badge-secondary">JavaScript</span> 
+                  </div>
+                </div>
               </div>
+    
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <a href="projects/ideagenerator/"><img  class="img-fluid" src="images/project generator.jpg"></a>
+                  <div class="card-body">
+                    <p class="card-text">A random project idea generator. Click the button for inspiration!</p>
+                  <span class="badge badge-secondary">HTML</span> <span class="badge badge-secondary">CSS</span> <span class="badge badge-secondary">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+    
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-            <a href="projects/colorgame/index.html"><img  class="img-fluid" src="images/rgb_guessing2.jpg"></a>
-              <div class="card-body">
-                <p class="card-text">Get better at guessing RGB colors with this fun & interactive tool. Built as part of a bootcamp.</p>
-              <span class="badge badge-secondary">HTML</span> <span class="badge badge-secondary">CSS</span> <span class="badge badge-secondary">JavaScript</span> 
-              
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <a href="projects/patatap/index.html"><img  class="img-fluid" src="images/patatap.jpg"></a>
-              <div class="card-body">
-                <p class="card-text">Have fun jamming out on your keyboard with this Patatap clone! Built as part of a bootcamp.</p>
-              <span class="badge badge-secondary">HTML</span> <span class="badge badge-secondary">CSS</span> <span class="badge badge-secondary">JavaScript</span> 
-              
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-                <a href="projects/todo/index.html"><img  class="img-fluid" src="images/to do list.jpg"></a>
-              <div class="card-body">
-                <p class="card-text">Keep track of your to-do's in the browser. Built as part of a bootcamp.</p>
-              <span class="badge badge-secondary">HTML</span> <span class="badge badge-secondary">CSS</span> <span class="badge badge-secondary">JavaScript</span> 
-              
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <a href="projects/ideagenerator/index.html"><img  class="img-fluid" src="images/project generator.jpg"></a>
-              <div class="card-body">
-                <p class="card-text">A random project idea generator. Click the button for inspiration!</p>
-              <span class="badge badge-secondary">HTML</span> <span class="badge badge-secondary">CSS</span> <span class="badge badge-secondary">JavaScript</span>
-              
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
+       </div>
     </div>
+
+    <span id="coaching"></span>
+    <div class="middle">
+      <div class="container" >
+        <h2><i class="fa fa-heart fa-2x"></i> <br><br>Coaching</h2><br>
+        <h3>Struggling with your code or dev journey?</h3>
+          <h5>I regularly coach developers to help them maximize their potential. Some topics I can help with include: learning & study techniques, dev mindset, and developing a plan for skill improvement. I also do language-specific tutoring using JavaScript, Python, and Unity/C#.</h5><br><h5>Pricing for sessions start at $75 for 50 minutes. E-mail me at <a class="blue-text underline" href="mailto:lara.durrant@gmail.com">lara.durrant@gmail.com</a> or DM me on <a class="blue-text underline" href="https://twitter.com/drlaradurrant">Twitter</a> for more information. <br><br>Schedule a free session today!</h5>
+       </div>
+    </div>
+
+    <span id="writing"></span>
+    <div>
+      <div class="container web-dev" >
+        <h2><i class="fa fa-pencil fa-2x"></i> <br><br> Writing </h2><br>
+          <h3>I publish articles regularly on DEV, Medium, and my own personal blog. Here are some recent posts I've made:</h3>
+          <ol>
+            <li><a class="underline" href="https://blog.laradurrant.dev/2020/04/03/just-finish-a-tutorial-and-not-sure-what-to-do-next-start-here/">Need help finding your next code project? Start here.</a></li>
+            <li><a class="underline" href="https://blog.laradurrant.dev/2020/02/26/tired-17-activities-for-low-energy-days/">Tired? 17 Activities for Low-energy Days</a></li>
+            <li><a class="underline" href="https://blog.laradurrant.dev/2020/03/26/resources-for-learning-to-code-online/">Learn to Code Online: Free and Budget-friendly Resources to Get Started With</a></li>
+          </ol>
+       </div>
+    </div>
+
+
   <div class="contact" id="contact">
     <h3><i class="fa fa-coffee fa-2x" ></i><br><br> <span class="contact-me">Let's get in touch. </span> </h3>
-    <p class="description">You can contact me on Twitter, GitHub, Codepen, or by e-mail.<br><br>
+    <p class="white-text">You can find me on Twitter, GitHub, Codepen, DEV, or by e-mail.<br><br>
     <span class="icons">
-      <a href="https://twitter.com/drlaradurrant"><i class="fa fa-twitter fa-3x"></i></a>
-      <a href="https://github.com/ld2416"><i class="fa fa-github fa-3x"></i></a>
-      <a href="https://codepen.io/ld2416"><i class="fa fa-codepen fa-3x"></i></a>
+      <a href="https://twitter.com/drlaradurrant"><i class="fab fa-twitter fa-3x"></i></a>
+      <a href="https://github.com/laradurrant"><i class="fab fa-github fa-3x"></i></a>
+      <a href="https://codepen.io/laradurrant"><i class="fab fa-codepen fa-3x"></i></a>
+      <a href="https://dev.to/laradurrant"><i class="fab fa-dev fa-3x"></i></a>
       <a href="mailto:lara.durrant@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
     </span>
 
   </div>
-
 </main>
 
 
 <footer class="text-muted">
-  <div class="container">
- 
-    <p>Copyright © 2020 Designed by Lara Durrant using Bootstrap & Font-Awesome. </p>
-      <a href="#">[Back to top]</a>
+  <div class="container dark-text">
+    <p><span class="underline">Copyright</span> © 2020 Designed by Lara Durrant with love using Bootstrap & Font-Awesome. </p>
     </p>
   </div>
 </footer>
@@ -158,4 +172,6 @@
 <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+
+</body>
 </html>

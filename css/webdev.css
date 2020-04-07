@@ -1,0 +1,136 @@
+html {
+  
+    scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 500;
+  color: var(--outer-space);
+  text-align: center;
+}
+
+h1 {
+  color: var(--aero-blue) !important;
+ font-family: 'Roboto Slab', serif;
+
+}
+
+h2 {
+    margin-top: 2em;  
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+   
+  }
+
+b, strong {
+  color: var(--outer-space);
+}
+
+a {
+  color: var(--outer-space);
+}
+
+a:hover {
+  color: var(--outer-space);
+}
+
+
+p{
+
+  color: var(--outer-space);
+ }
+
+ 
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: var(--aero-blue);
+}
+
+
+.bg-light {
+  background-color: var(--aero-blue) !important;
+  
+}
+
+.white-text {
+  color: var(--main-white) !important;
+}
+
+.blue-text {
+  color: var(--aero-blue) !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.dark-text {
+
+  color: var(--outer-space);
+}
+
+
+.lead {
+  font-weight: 600;
+}
+
+
+.projects-list {
+  background-color: var(--off-white) !important;
+  height: 95vh; 
+}
+
+
+.welcome {
+  padding-top: 40vh;
+  height: 100vh;
+  margin-bottom: 0;
+  background-color: var(--outer-space);
+  color: var(--main-white);
+}
+
+.welcome p:last-child {
+  margin-bottom: 0;
+}
+
+.welcome h1 {
+  font-weight: 300;
+}
+
+.welcome .container {
+  max-width: 40rem;
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--outer-space);
+  color: var(--aero-blue);
+  padding: 20px;
+  height: 100vh; 
+}
+
+.contact-me {
+  font-family: 'Roboto Slab', serif;
+}
+
+
+  /* Font Awesome icons  */
+  .icons a {
+    color: var(--aero-blue);
+  }
+  
+  
+  .icons a:hover {
+    color: var(--main-white);
+  }
+    /* end Font Awesome icons  */
+  
+  
+  

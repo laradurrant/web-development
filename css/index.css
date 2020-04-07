@@ -1,0 +1,174 @@
+html {
+  
+    scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 500;
+  color: var(--outer-space);
+  text-align: center;
+}
+
+h1 {
+  color: var(--light-pink) !important;
+ font-family: 'Roboto Slab', serif;
+
+}
+
+h2 {
+    margin-top: 2em;  
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+   
+  }
+
+b, strong {
+  color: var(--outer-space);
+}
+
+a {
+  color: var(--outer-space);
+}
+
+a:hover {
+  color: var(--outer-space);
+}
+
+
+p{
+
+  color: var(--outer-space);
+ }
+
+ 
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: var(--light-pink);
+}
+
+
+.bg-light {
+  background-color: var(--light-pink) !important;
+  
+}
+
+.white-text {
+  color: var(--main-white) !important;
+}
+
+.blue-text {
+  color: var(--light-pink) !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.dark-text {
+
+  color: var(--outer-space);
+}
+
+
+.lead {
+  font-weight: 600;
+}
+
+
+
+.web-dev {
+  background-color: var(--off-white);
+  color: var(--outer-space);
+  height: 200vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+
+}
+
+@media (min-width: 768px) { 
+
+  .web-dev {
+    background-color: var(--off-white);
+    color: var(--outer-space);
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  
+  }
+ }
+
+
+.middle {
+  background-color:var(--outer-space);
+   height: 100vh; 
+   color:var(--off-white);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 20px;
+ 
+}
+
+.welcome {
+  padding-top: 40vh;
+  height: 100vh;
+  margin-bottom: 0;
+  background-color: var(--outer-space);
+  color: var(--main-white);
+}
+
+.welcome p:last-child {
+  margin-bottom: 0;
+}
+
+.welcome h1 {
+  font-weight: 300;
+}
+
+.welcome .container {
+  max-width: 40rem;
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--outer-space);
+  color: var(--light-pink);
+  padding: 20px;
+  height: 100vh; 
+}
+
+.contact-me {
+  font-family: 'Roboto Slab', serif;
+}
+
+
+  /* Font Awesome icons  */
+  .icons a {
+    color: var(--light-pink);
+  }
+  
+  
+  .icons a:hover {
+    color: var(--main-white);
+  }
+    /* end Font Awesome icons  */
+  
+  
+  
