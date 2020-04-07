@@ -89,6 +89,7 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 20px;
+  margin-bottom: 10px;
 
 }
 
@@ -102,7 +103,7 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 20px;
-
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) { 
@@ -117,7 +118,7 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 10px;
-  
+    margin-bottom: 10px;
   }
  }
 
@@ -132,6 +133,7 @@ footer {
    justify-content: center;
    text-align: center;
    padding: 20px;
+  margin-bottom: 10px;
  
 }
 
