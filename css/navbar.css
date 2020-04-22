@@ -34,12 +34,12 @@
 
   
 .nav-light {
-    background-color: var(--light-pink) !important;
+    background-color: var(--aero-blue) !important;
     
   }
 
   .dropdown-item:hover {
-    background-color: var(--light-pink);
+    background-color: var(--aero-blue);
   }
   
   /* end Navbar */

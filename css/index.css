@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  color: var(--light-pink) !important;
+  color: var(--aero-blue) !important;
  font-family: 'Roboto Slab', serif;
 
 }
@@ -45,12 +45,12 @@ p{
 footer {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  background-color: var(--light-pink);
+  background-color: var(--aero-blue);
 }
 
 
 .bg-light {
-  background-color: var(--light-pink) !important;
+  background-color: var(--aero-blue) !important;
   
 }
 
@@ -59,7 +59,7 @@ footer {
 }
 
 .blue-text {
-  color: var(--light-pink) !important;
+  color: var(--aero-blue) !important;
 }
 
 .underline {
@@ -169,7 +169,7 @@ footer {
   justify-content: center;
   text-align: center;
   background-color: var(--outer-space);
-  color: var(--light-pink);
+  color: var(--aero-blue);
   padding: 20px;
   height: 100vh; 
 }
@@ -181,13 +181,18 @@ footer {
 
   /* Font Awesome icons  */
   .icons a {
-    color: var(--light-pink);
+    color: var(--aero-blue);
   }
   
   
   .icons a:hover {
     color: var(--main-white);
   }
+
+.heart {
+  color: var(--aero-blue);
+}
+
     /* end Font Awesome icons  */
   
   
